@@ -6,6 +6,7 @@ export default function FormularioContacto({ onAgregar }) {
     telefono: "",
     correo: "",
     etiqueta: "",
+    empresa: "",
   });
 
   const onChange = (e) => {
@@ -17,9 +18,9 @@ export default function FormularioContacto({ onAgregar }) {
 
   const onSubmit = (e) => {
     e.preventDefault();
-    if (!form.nombre || !form.telefono || !form.correo) return;
+    if (!form.nombre || !form.telefono || !form.correo || !form.empresa) return;
     onAgregar(form);
-    setForm({ nombre: "", telefono: "", correo: "", etiqueta: "" });
+    setForm({ nombre: "", telefono: "", correo: "", empresa: "", etiqueta: ""}) ;
   };
 
   return (
@@ -44,7 +45,7 @@ export default function FormularioContacto({ onAgregar }) {
       />
       <input
         name="empresa"
-        value={form.etiqueta}
+        value={form.empresa}
         onChange={onChange}
         placeholder="empresa"
       />
