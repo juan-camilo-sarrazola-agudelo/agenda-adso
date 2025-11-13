@@ -1,13 +1,25 @@
 {
-"contactos": [
-{
-"id": 1,
-"nombre": "juan camilo sarrazola",
-"telefono": "3105458578",
-"correo": "jcsarrazola@gmail.com",
-"etiqueta": "estudiante"
-},
-{
-}
-]
+  "contactos": [
+    {
+      "id": "7b07",
+      "nombre": "juan camilo sarrazola",
+      "telefono": "3105458578",
+      "correo": "s.arra.19@hotmail.com",
+      "etiqueta": "estudiante"
+    },
+    {
+      "id": "38c9",
+      "nombre": "Vanesa",
+      "telefono": "123456",
+      "correo": "Vanesa@sena.edu.co",
+      "etiqueta": "estudiante"
+    },
+    {
+      "id": "bedd",
+      "nombre": "Stiven",
+      "telefono": "987645",
+      "correo": "Stiven@sena.edu.co",
+      "etiqueta": "estudiante"
+    }
+  ]
 }

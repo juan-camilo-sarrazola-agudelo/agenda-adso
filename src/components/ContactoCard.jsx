@@ -1,28 +1,41 @@
-export default function ContactoCard({
-  nombre,
-  telefono,
-  correo,
-  etiqueta,
-  onEliminar,
-}) {
+// Este componente muestra un contacto individual.
+// Incluye nombre, teléfono, correo, etiqueta y el botón de eliminar.
+
+export default function ContactoCard({ nombre, telefono, correo, etiqueta, onEliminar }) {
   return (
-    <article className="bg-white rounded-xl border border-gray-200 shadow-sm p-4">
-      <h3 className="text-xl font-semibold text-morado-oscuro mb-2">{nombre}</h3>
-      <p className="text-gray-700 mb-1">📞 {telefono}</p>
-      <p className="text-gray-700 mb-1">✉ {correo}</p>
-      {etiqueta && (
-        <p className="inline-block text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded mt-1">
-          {etiqueta}
+    <div className="bg-white shadow-sm border border-gray-200 rounded-2xl p-6 flex items-start justify-between">
+      {/* Información del contacto */}
+      <div className="space-y-1">
+        {/* Nombre */}
+        <h3 className="text-xl font-semibold text-gray-800">{nombre}</h3>
+
+        {/* Teléfono */}
+        <p className="text-gray-600 text-sm flex items-center gap-2">
+          <span className="text-purple-500 text-lg">📞</span>
+          {telefono}
         </p>
-      )}
-      <div className="flex justify-end mt-3">
-        <button
-          onClick={() => onEliminar(correo)}
-          className="bg-red-600 hover:bg-red-700 text-white text-sm px-3 py-1.5 rounded-lg"
-        >
-          Eliminar
-        </button>
+
+        {/* Correo */}
+        <p className="text-gray-600 text-sm flex items-center gap-2">
+          <span className="text-purple-500 text-lg">✉️</span>
+          {correo}
+        </p>
+
+        {/* Etiqueta (si existe) */}
+        {etiqueta && (
+          <span className="inline-block bg-gray-100 text-gray-700 text-xs px-3 py-1 rounded-full mt-2">
+            {etiqueta}
+          </span>
+        )}
       </div>
-    </article>
+
+      {/* Botón de eliminar */}
+      <button
+        onClick={onEliminar}
+        className="bg-red-500 hover:bg-red-600 text-white text-sm px-4 py-2 rounded-lg shadow transition"
+      >
+        Eliminar
+      </button>
+    </div>
   );
 }
