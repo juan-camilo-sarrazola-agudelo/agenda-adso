@@ -135,7 +135,7 @@ function FormularioContacto({ onAgregar }) {
         <input
           className="w-full rounded-xl border-gray-300 focus:ring-purple-500 focus:border-purple-500"
           name="nombre"
-          placeholder="Ej: Camila Pérez"
+          placeholder=" Ej:Juan camilo"
           value={form.nombre}    // El valor mostrado viene del estado form.nombre
           onChange={onChange}    // Al escribir, actualizamos el estado
         />
@@ -153,7 +153,7 @@ function FormularioContacto({ onAgregar }) {
         <input
           className="w-full rounded-xl border-gray-300 focus:ring-purple-500 focus:border-purple-500"
           name="telefono"
-          placeholder="Ej: 300 123 4567"
+          placeholder=" Ej:3105458578"
           value={form.telefono}  // Valor controlado desde form.telefono
           onChange={onChange}
         />
@@ -171,7 +171,7 @@ function FormularioContacto({ onAgregar }) {
         <input
           className="w-full rounded-xl border-gray-300 focus:ring-purple-500 focus:border-purple-500"
           name="correo"
-          placeholder="Ej: camila@sena.edu.co"
+          placeholder="Ej:@sena.edu.co"
           value={form.correo}    // Valor controlado desde form.correo
           onChange={onChange}
         />
@@ -189,7 +189,7 @@ function FormularioContacto({ onAgregar }) {
         <input
           className="w-full rounded-xl border-gray-300 focus:ring-purple-500 focus:border-purple-500"
           name="etiqueta"
-          placeholder="Ej: Trabajo"
+          placeholder="Ej:estudiante, trabajo, familia"
           value={form.etiqueta}
           onChange={onChange}
         />
