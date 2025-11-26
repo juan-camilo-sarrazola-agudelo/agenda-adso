@@ -1,11 +1,3 @@
 {
-  "contactos": [
-    {
-      "id": "977f",
-      "nombre": "juan camilo ",
-      "telefono": "3105458578",
-      "correo": "camio@sena.edu.co",
-      "etiqueta": "estudiante"
-    }
-  ]
+  "contactos": []
 }
