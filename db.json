@@ -1,3 +1,25 @@
 {
-  "contactos": []
+  "contactos": [
+    {
+      "id": "800d",
+      "nombre": "juan camilo ",
+      "telefono": "3105458578",
+      "correo": "camio@sena.edu.co",
+      "etiqueta": "estudiante"
+    },
+    {
+      "id": "415g",
+      "nombre": "vanesa",
+      "telefono": "3105458578",
+      "correo": "vanesa@sena.edu.co",
+      "etiqueta": "estudiante"
+    },
+    {
+      "id": "0839",
+      "nombre": "estiven",
+      "telefono": "3105458578",
+      "correo": "estiven@sena.edu.co",
+      "etiqueta": "estudiante"
+    }
+  ]
 }
